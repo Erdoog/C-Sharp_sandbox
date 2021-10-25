@@ -17,16 +17,15 @@ namespace FirstApp
 
             Console.WriteLine("Ayo shrimpiez");
             int mslng = Convert.ToInt32(Console.ReadLine());
-            int[,] ms = new int[50,50];
+            int[,] ms = new int[mslng,mslng]];
             for (int i = 0; i < mslng; i++)
             {
-                Console.WriteLine();
+                Console.WriteLine("");
                 for (int j = 0; j < mslng; j++)
                 {
                     ms[i, j] = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("|");
                 }
-                Console.WriteLine("");
             }
 
             foreach(int i in ms) {
