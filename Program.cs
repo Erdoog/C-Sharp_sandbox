@@ -24,33 +24,35 @@ namespace FirstApp
                 for (int j = 0; j < mslng; j++)
                 {
                     ms[i, j] = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("|");
+                    Console.WriteLine($"| {j}");
                 }
                 Console.WriteLine("");
             }
 
-            foreach(int i in ms) {
-                if (i != 0)
+            for (int i = 0; i < mslng; i++) {
+                for (int j = 0; j < mslng; j++)
                 {
-                    Console.Write(i);
+                    Console.Write($"{ms[i,j]} ");
                 }
+                Console.WriteLine();
             }
-            
-            /*Game N001 = new Game("Gayshit", 10.6, "RPG", 26);
-            var N002 = new Game("Honkai", 25.1, "RPG", 79);
-            Console.WriteLine(SumTools.JumpByTwo(3));
-            Console.WriteLine(Game.GetTotalSize());
-            var sumdouble = Convert.ToDouble(Console.ReadLine());
-            var MixedVar = SumTools.JumpByTwo(sumdouble);
-            int[,] msinp;
-            Console.WriteLine("\nUr variable type: {0}\n" +
-                "Ur variable itself: {1}", MixedVar.GetType().ToString(), MixedVar.ToString());
-            Random rnd = new Random();
-            while (sumdouble == sumdouble)
             {
-                int rndint = rnd.Next(10);
-                Console.Write($"\u001b[35m{rndint}\u001b[0m");
-            }*/
+                /*Game N001 = new Game("Gayshit", 10.6, "RPG", 26);
+                var N002 = new Game("Honkai", 25.1, "RPG", 79);
+                Console.WriteLine(SumTools.JumpByTwo(3));
+                Console.WriteLine(Game.GetTotalSize());
+                var sumdouble = Convert.ToDouble(Console.ReadLine());
+                var MixedVar = SumTools.JumpByTwo(sumdouble);
+                int[,] msinp;
+                Console.WriteLine("\nUr variable type: {0}\n" +
+                    "Ur variable itself: {1}", MixedVar.GetType().ToString(), MixedVar.ToString());
+                Random rnd = new Random();
+                while (sumdouble == sumdouble)
+                {
+                    int rndint = rnd.Next(10);
+                    Console.Write($"\u001b[35m{rndint}\u001b[0m");
+                }*/
+            }
         }
     }
 }
