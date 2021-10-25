@@ -23,7 +23,8 @@ namespace FirstApp
                 Console.WriteLine("");
                 for (int j = 0; j < mslng; j++)
                 {
-                    ms[i, j] = Convert.ToInt32(Console.ReadLine());
+                    int[] inp = Console.Readline().ToInt32()
+                    ms[i] = inp.split(" ");
                     Console.WriteLine("|");
                 }
             }
