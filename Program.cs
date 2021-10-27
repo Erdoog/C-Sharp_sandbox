@@ -10,31 +10,47 @@ namespace FirstApp
     {
         public static void Main(string[] args)
         {
-
-            Console.WriteLine("SumChicken");
-
-
-
-            Console.WriteLine("Ayo shrimpiez");
-            int mslng = Convert.ToInt32(Console.ReadLine());
-            int[,] ms = new int[50,50];
-            for (int i = 0; i < mslng; i++)
-            {
-                Console.WriteLine();
-                for (int j = 0; j < mslng; j++)
-                {
-                    ms[i, j] = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"| {j}");
-                }
-                Console.WriteLine("");
+            void Print(string inp){
+                Console.WriteLine(inp);
             }
 
-            for (int i = 0; i < mslng; i++) {
-                for (int j = 0; j < mslng; j++)
+            {
+                Print("Ayo shrimpiez");
+
+                int mslng = Convert.ToInt32(Console.ReadLine());
+                int[,] ms = new int[mslng,mslng];
+                for (int i = 0; i < mslng; i++)
                 {
-                    Console.Write($"{ms[i,j]} ");
+                    
+                    string[] lowerms = Console.ReadLine().Split(" ");
+                    int[] x = new int[mslng];
+                    int q = 0;
+                    foreach (string j in lowerms)
+                    {
+                        x[q] = Convert.ToInt32(j);
+                        q++;
+                    }
+                    q = 0;
+                    foreach (int j in x)
+                    {
+                        ms[i,q] = j;
+                        q++;
+                    }
+                    Print("----------");
                 }
-                Console.WriteLine();
+                int a = 0;
+                int b = 0;
+                int mslngmax = 0;
+                for (int i = 0; i < mslng * 2 - 1; i++)
+                {
+                    b = mslngmax;
+                    if (a < mslng)
+                    {
+
+                    } 
+                }
+
+
             }
             {
                 /*Game N001 = new Game("Gayshit", 10.6, "RPG", 26);
